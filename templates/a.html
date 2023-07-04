@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image with If Condition</title>
+    <script>
+        function setImage() {
+            var imageContainer = document.getElementById('imageContainer');
+            var image1 = new Image();
+            var image2 = new Image();
+
+            image1.src = 'image1.jpg';
+            image2.src = 'image2.jpg';
+            
+            image1.onload = function() {
+                imageContainer.innerHTML = '<img src="' + image1.src + '"height="300" alt="Image 1">';
+            };
+
+            image1.onerror = function() {
+                imageContainer.innerHTML = '<img src="' + image2.src + '" height="300"alt="Image 2">';
+            };
+        }
+    </script>
+</head>
+<body>
+    <button onclick="setImage()">Set Image</button>
+    <div id="imageContainer"></div>
+</body>
+</html>

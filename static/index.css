@@ -1,0 +1,94 @@
+#bg-img{
+    
+    background-image: url('pngtree-blue-purple-simple-gradient-background-picture-image_1457885.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+}
+
+.button-link {
+  /* Add your desired styles for the button */
+  /* For example: */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: #6408ed;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #2a2e4b;
+}
+
+.button:hover {background-color: #ed5707}
+
+.button:active {
+  background-color:rgb(104, 21, 237);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+  .gfg {
+    margin: 50px auto;
+    width: 80px;
+    height: 30px;
+    border: 1px solid red;
+    overflow: hidden;
+}
+
+  .autoShowHide {
+    /* white-space: nowrap;  */
+    max-width: 518px;
+    max-height: 20vw;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+  }
+  
+  .autoShowHide:hover {
+    white-space: normal; 
+    overflow: visible;
+    max-height:max-content;
+    width: 100%; 
+  }
+
+
+  .upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .btn0 {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
